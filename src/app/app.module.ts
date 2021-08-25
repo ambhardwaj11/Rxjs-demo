@@ -25,6 +25,7 @@ import { SubjectComponent } from './subject/subject.component';
 import { Comp1Component } from './NewFolder/comp1/comp1.component';
 import { Comp2Component } from './NewFolder/comp2/comp2.component';
 import { Comp3Component } from './NewFolder/comp3/comp3.component';
+import { ReplayComponent } from './replay/replay.component';
 
 @NgModule({
   declarations: [
@@ -49,6 +50,7 @@ import { Comp3Component } from './NewFolder/comp3/comp3.component';
     Comp1Component,
     Comp2Component,
     Comp3Component,
+    ReplayComponent,
   ],
   imports: [
     BrowserModule,

@@ -11,6 +11,7 @@ import { MapComponent } from './map/map.component';
 import { ObservableComponent } from './observable/observable.component';
 import { PluckComponent } from './pluck/pluck.component';
 import { PromiseComponent } from './promise/promise.component';
+import { ReplayComponent } from './replay/replay.component';
 import { RetryComponent } from './retry/retry.component';
 import { SubjectComponent } from './subject/subject.component';
 import { TakeComponent } from './take/take.component';
@@ -35,6 +36,7 @@ const routes: Routes = [
     { path : 'Retry' , component : RetryComponent},
     { path : 'debounce' , component : DebounceComponent},
     { path : 'subject' , component : SubjectComponent},
+    { path : 'replay' , component : ReplayComponent },
   ]},
   { path : '**', redirectTo : 'promise'  },
 ];
