@@ -1,0 +1,42 @@
+
+<div class="container">
+<div class="my-3">
+    <h2> Custom Observables  </h2>
+    <br>
+
+    <div class="row">
+       
+        <div class="col-md-6">
+            <strong> Ex-01 (Manual) </strong>
+            <hr>
+            <ul class="techlist error" id="elcontainer1" [ngClass]="status == 'completed' ? 'complete' :  status=='error' ? 'error' : '' " >
+                <!-- <li> Angular </li> -->
+                <!-- <li> Typescirpt </li> -->
+                <!-- <li> React </li> -->
+            </ul>
+        </div>
+
+        <div class="col-md-6">
+            <strong> Ex-02 (Custom Interval Observables  </strong>
+            <hr>
+            <ul class="techlist complete" id="elcontainer2" >
+                <li> Angular </li> 
+                <li> Typescirpt </li>
+                 <li> React </li>
+            </ul>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12">
+                <p class="border rounded bg-light py-2 py-3 " >  <strong> Random Names </strong> 'Aman','Ankit','Anmol','Akshat','Mohit' </p>
+                <hr>
+                <p>  Current Name : <strong class="text-success" > Aman </strong> </p> 
+                <span class="badge badge-success" > Success </span>
+                <span class="badge badge-success">Success</span>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+</div>
