@@ -1,1 +1,30 @@
-<p>debounce works!</p>
+
+
+<div class="container">
+    <div class="my-3">
+        <h2> DeounceTime & DeounceUntilChanged  </h2>
+
+        <div class="row my-4 ">
+            <div class="col-md-6">
+                <strong> Ex -01 <span class="text-primary" > Debounce Time  </span></strong>
+                <hr>
+                <div class="form-group  ">
+                    <label>  <strong> Search </strong> </label>  
+                    <input type="text" class="form-control my-2"  aria-describedby="emailHelp" placeholder="Search" #myInput >
+                    <span *ngIf="reqData !=null" > Requested Data  <strong class="text-primary" > {{ reqData }} </strong> </span>
+                  </div>
+            </div>
+
+            <div class="col-md-6">
+                <strong> Ex -01 <span class="text-danger" > DintinctUntilChanged  </span></strong>
+                <hr>
+                <div class="form-group  ">
+                    <label>  <strong> Search </strong> </label>  
+                    <input type="text" class="form-control my-2" aria-describedby="emailHelp" placeholder="Search" #myInput2 >
+                    <span *ngIf="reqData2 !=null" > Requested Data  <strong class="text-primary" > {{ reqData2 }} </strong> </span>
+                  </div>
+            </div>
+        </div>
+
+    </div>
+</div>

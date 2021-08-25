@@ -20,6 +20,11 @@ import { TakeComponent } from './take/take.component';
 import { RetryComponent } from './retry/retry.component';
 import { HttpClientModule } from '@angular/common/http';
 import { DebounceComponent } from './debounce/debounce.component';
+import { LoadingBarRouterModule } from '@ngx-loading-bar/router';
+import { SubjectComponent } from './subject/subject.component';
+import { Comp1Component } from './NewFolder/comp1/comp1.component';
+import { Comp2Component } from './NewFolder/comp2/comp2.component';
+import { Comp3Component } from './NewFolder/comp3/comp3.component';
 
 @NgModule({
   declarations: [
@@ -40,11 +45,16 @@ import { DebounceComponent } from './debounce/debounce.component';
     TakeComponent,
     RetryComponent,
     DebounceComponent,
+    SubjectComponent,
+    Comp1Component,
+    Comp2Component,
+    Comp3Component,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    LoadingBarRouterModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
