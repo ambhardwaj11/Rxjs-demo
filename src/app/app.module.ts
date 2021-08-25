@@ -19,6 +19,7 @@ import { TapComponent } from './tap/tap.component';
 import { TakeComponent } from './take/take.component';
 import { RetryComponent } from './retry/retry.component';
 import { HttpClientModule } from '@angular/common/http';
+import { DebounceComponent } from './debounce/debounce.component';
 
 @NgModule({
   declarations: [
@@ -37,7 +38,8 @@ import { HttpClientModule } from '@angular/common/http';
     FilterComponent,
     TapComponent,
     TakeComponent,
-    RetryComponent
+    RetryComponent,
+    DebounceComponent,
   ],
   imports: [
     BrowserModule,

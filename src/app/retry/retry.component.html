@@ -2,42 +2,42 @@
 
 <div class="container">
     <div class="my-3">
-        <h2> Retry Operator </h2>
+        <h2> Retry Operator ===>>> Try With Internet Off   </h2>
 
         <div class="row">
             <div class="col-md-6">
-                <table>
-                    <tr>
-                        <th>Id</th>
-                        <td> --------</td>
-                    </tr>
-                    <tr>
-                        <th>Id</th>
-                        <td> --------</td>
-                    </tr>
-                    <tr>
-                        <th>Id</th>
-                        <td> --------</td>
-                    </tr>
-                    <tr>
-                        <th>Id</th>
-                        <td> --------</td>
-                    </tr>
-                    <tr>
-                        <th>Id</th>
-                        <td> --------</td>
-                    </tr>
-                    <tr>
-                        <th>Id</th>
-                        <td> --------</td>
-                    </tr>
-                    <tr>
-                        <th>Id</th>
-                        <td> --------</td>
-                    </tr>
-                </table>
+                <table class="table" *ngFor="let item of person" >
+                    <thead>
+                      <tr>
+                        <th scope="col"> Id </th>
+                        <th scope="col"> Name </th>
+                        <th scope="col"> Username </th>
+                        <th scope="col"> Email </th>
+                        <!-- <th scope="col"> Phone </th> -->
+                        <th scope="col"> Website </th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <!-- <th scope="row">1</th> -->
+                        <td> {{ item.id }} </td>
+                        <td> {{ item.name}} </td>
+                        <td> {{ item.username}} </td>
+                        <td> {{ item.email}} </td>
+                        <!-- <td> {{ item.phone}} </td> -->
+                        <td> {{ item.website}} </td>
+                      </tr>
+                    </tbody>
+                  </table>
             </div>
         </div>
 
+        <!-- <button  class="btn btn-primary" > Fetch Details </button> -->
+        <button  (click)="fetchDetails()" class="btn btn-primary" type="button" >
+            <span *ngIf="fetching" class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+             {{ fetching  ? 'Data is Fetching...' : 'Fetch Details' }}
+          </button> 
+        <br> <br>
+        <p> Status <strong> {{status}} </strong> </p>
     </div>
 </div>
